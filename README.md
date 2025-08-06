@@ -88,6 +88,6 @@ Para adaptar este portfólio:
 ## 📞 Contato
 
 **Adeilson Dias**
-- Email: contato@example.com
+- Email: adeilsonj7dias@gmail.com
 - LinkedIn: linkedin.com/in/adeilson-dias
 - GitHub: github.com/adeilson-dias

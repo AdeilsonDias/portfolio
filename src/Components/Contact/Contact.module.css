@@ -1,0 +1,130 @@
+.containerContact {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.introducao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.introducao h1 {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid rgb(255, 0, 0);
+  font-size: 70px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  animation: slideInLeft 2s ease forwards;
+}
+.introducao h2 {
+  font-size: 70px;
+  animation: slideInRight 2s ease forwards;
+  vertical-align: middle;
+}
+.introducao h2 span {
+  color: rgb(255, 0, 0);
+  border-bottom: 1px solid rgb(43, 255, 0);
+  border-top: 1px solid rgb(43, 255, 0);
+}
+
+.redes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.redes a {
+  animation: slideInLeft 2s ease forwards;
+}
+.redes a i {
+  font-size: 50px;
+  color: rgb(21, 255, 0);
+  box-shadow: 0 0 15px #25d366;
+  animation: pulse 2.5s infinite;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.redes p {
+  font-size: 29px;
+  animation: slideInRight 2s ease forwards;
+}
+.redes h5 {
+  animation: slideInLeft 2s ease forwards;
+}
+.redes h5 i {
+  font-size: 50px;
+  color: rgb(163, 159, 159);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px #25d366;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px #25d366, 0 0 30px #25d366;
+    transform: scale(1.1);
+  }
+  100% {
+    box-shadow: 0 0 10px #25d366;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containerContact {
+    margin-top: 30px;
+  }
+  .contacts {
+    transform: scale(0.9);
+  }
+  .introducao {
+    display: flex;
+    flex-direction: column;
+  }
+  .redes a i {
+    font-size: 20px;
+  }
+  .redes h5 i {
+    font-size: 26px;
+  }
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

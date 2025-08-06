@@ -1,0 +1,91 @@
+* {
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  animation: slideUp 0.8s ease-out forwards;
+}
+.cardProjects {
+  max-width: 400px;
+  background-color: rgb(39, 40, 41);
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.nameProject {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+}
+.imgEdit {
+  transition: 0.5s ease-in-out;
+  width: 350px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.imgEdit:hover {
+  transform: scale(1.02);
+}
+.description {
+  margin-top: 10px;
+  margin-bottom: 13px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+.tech {
+  color: red;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 50px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 60px;
+  }
+  .cardProjects {
+    margin: 0 auto;
+    margin-top: 40px;
+    transform: scale(0.9);
+  }
+  .description {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+/*RESPONSIVIDADE TABLET'S*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin-top: 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardProjects {
+    transform: scale(0.9);
+  }
+}
